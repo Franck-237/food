@@ -9,6 +9,10 @@ import combo from "../assets/images/combo.png";
 import left from "../assets/images/arrow-1.png";
 import right from "../assets/images/arrow-2.png";
 import food from "../assets/images/Food.png";
+import hour from "../assets/images/hour.png";
+import locate from "../assets/images/location.png";
+import phone from "../assets/images/phone.png";
+import line from "../assets/images/line-1.png";
 
 const Header = () => {
 
@@ -47,7 +51,7 @@ const Header = () => {
   return (
     <div>
         <div className='container mx-auto px-5 md:px-10 lg:px-20 pt-10 font-montserrat'>
-            <div className='flex flex-col md:flex-row items-center justify-between gap-5 md:gap-10'>
+            <div className='flex flex-col md:flex-row items-center justify-between gap-5 md:gap-10 pb-10 md:pb-20'>
                 <div className='flex flex-col gap-10'>
                     <div className='bg-[#F5DDC4] rounded-full flex items-center justify-between gap-5 pl-3 pr-1 w-[200px]'>
                         <p className='text-[#F48E28] font-semibold'>Bike Delivery</p>
@@ -100,6 +104,29 @@ const Header = () => {
                 </div>
                 <div className='hidden md:block'>
                     <img src={food} alt="" width={450}/>
+                </div>
+            </div>
+            <div className='flex flex-col md:flex-row justify-center gap-5 md:gap-10 lg:gap-32 items-center shadow-2xl rounded-lg mb-20 py-5 px-3'>
+                <div className='flex flex-col items-center justify-center gap-2'>
+                    <img src={hour} alt="" className='rounded-full bg-[#F48E28] p-3'/>
+                    <p className='font-semibold'>Today 10:00am - 10:00pm</p>
+                    <p>Working time</p>
+                </div>
+                <div>
+                    <img src={line} alt="" className='hidden md:block'/>
+                </div>
+                <div className='flex flex-col items-center justify-center gap-2'>
+                    <img src={locate} alt="" className='rounded-full bg-[#F48E28] p-3'/>
+                    <p className='font-semibold'>Washington, D.C., DC,USA</p>
+                    <p>Our Location</p>
+                </div>
+                <div>
+                    <img src={line} alt="" className='hidden md:block'/>
+                </div>
+                <div className='flex flex-col items-center justify-center gap-2'>
+                    <img src={phone} alt="" className='rounded-full bg-[#F48E28] p-3'/>
+                    <p className='font-semibold'>+0123 456 7891</p>
+                    <p>Phone Number</p>
                 </div>
             </div>
         </div>

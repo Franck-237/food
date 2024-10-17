@@ -41,7 +41,7 @@ const Navbar = () => {
                         nav ? <MdClose className='text-2xl'/> : <FiMenu className='text-2xl' />
                     }
                 </div>
-                <div className={`z-10 absolute backdrop-blur-sm pt-10 flex h-[100vh] flex-col md:pt-0 bg-white md:relative left-0 w-[100%] md:w-auto md:h-auto md:flex-row justify-start md:justify-between items-center gap-10 lg:gap-20 space-y-5 md:space-y-0 md:space-x-10 text-sm md:text-md lg:text-lg font-bold ${nav ? 'left-0 top-[80px] transition-all duration-700' : 'left-[-1000px] top-[80px] transition-all duration-700'} md:left-0 md:top-0`}>
+                <div className={`z-10 absolute backdrop-blur-lg pt-10 flex h-[100vh] flex-col md:pt-0 bg-none md:bg-white md:relative left-0 w-[100%] md:w-auto md:h-auto md:flex-row justify-start md:justify-between items-center gap-10 lg:gap-20 space-y-5 md:space-y-0 md:space-x-10 text-sm md:text-md lg:text-lg font-bold ${nav ? 'left-0 top-[80px] transition-all duration-700' : 'left-[-1000px] top-[80px] transition-all duration-700'} md:left-0 md:top-0`}>
                     <div className='flex items-center justify-between gap-10'>
                         {
                             Link.map((data) => (
