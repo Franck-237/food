@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Main from './components/Main';
 import Newsletter from './components/Newsletter';
+import Footer from './components/Footer';
 import { ToastContainer } from 'react-toastify';
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
       <Header />
       <Main />
       <Newsletter />
+      <Footer />
     </div>
   )
 }
